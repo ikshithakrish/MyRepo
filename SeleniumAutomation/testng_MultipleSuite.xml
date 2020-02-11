@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" verbose="1" name="GKM Suite" annotations="JDK" parallel="tests">  <!-- parallel="none" - TO AVOID PARALLEL EXECUTION -->
+   <test name="test1">
+    <classes>
+      <class name="com.learning.testng.Multiple_Test1"/>
+    </classes>
+  </test> <!-- Test1 -->
+  
+  <test name="test2">
+    <classes>
+      <class name="com.learning.testng.Multiple_Test2"/>
+    </classes>
+  </test> <!-- Test2 -->
+  
+</suite> <!-- Suite -->

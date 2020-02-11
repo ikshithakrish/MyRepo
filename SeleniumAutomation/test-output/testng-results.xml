@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="495484" started-at="2019-12-30T10:54:14Z" finished-at="2019-12-30T11:02:29Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="495484" started-at="2019-12-30T10:54:14Z" finished-at="2019-12-30T11:02:29Z">
+      <class name="com.learning.testng.DataDriven_KeywordDriven_Hybrid">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.learning.testng.DataDriven_KeywordDriven_Hybrid@163e9ab]" name="beforeTest" is-config="true" duration-ms="1037" started-at="2019-12-30T16:24:14Z" finished-at="2019-12-30T16:24:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="exection()[pri:0, instance:com.learning.testng.DataDriven_KeywordDriven_Hybrid@163e9ab]" name="exection" duration-ms="494401" started-at="2019-12-30T16:24:15Z" finished-at="2019-12-30T16:32:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- exection -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.learning.testng.DataDriven_KeywordDriven_Hybrid@163e9ab]" name="afterTest" is-config="true" duration-ms="0" started-at="2019-12-30T16:32:29Z" finished-at="2019-12-30T16:32:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.learning.testng.DataDriven_KeywordDriven_Hybrid -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [GKM Suite]" parallel="tests">
+  <test name="test1(failed)" parallel="tests">
+    <classes>
+      <class name="com.learning.testng.Multiple_Test2">
+        <methods>
+          <include name="loadLogger"/>
+        </methods>
+      </class> <!-- com.learning.testng.Multiple_Test2 -->
+      <class name="com.learning.testng.Multiple_Test1">
+        <methods>
+          <include name="a1"/>
+          <include name="loadLogger"/>
+        </methods>
+      </class> <!-- com.learning.testng.Multiple_Test1 -->
+    </classes>
+  </test> <!-- test1(failed) -->
+  <test name="test2(failed)" parallel="tests">
+    <classes>
+      <class name="com.learning.testng.Multiple_Test2">
+        <methods>
+          <include name="loadLogger"/>
+          <include name="a1"/>
+        </methods>
+      </class> <!-- com.learning.testng.Multiple_Test2 -->
+      <class name="com.learning.testng.Multiple_Test1">
+        <methods>
+          <include name="loadLogger"/>
+        </methods>
+      </class> <!-- com.learning.testng.Multiple_Test1 -->
+    </classes>
+  </test> <!-- test2(failed) -->
+</suite> <!-- Failed suite [GKM Suite] -->
