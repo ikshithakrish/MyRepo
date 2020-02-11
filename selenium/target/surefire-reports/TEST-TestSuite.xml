@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TestSuite" time="1.576" tests="1" errors="0" skipped="0" failures="1">
+  <properties>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="JOB_NAME" value="Maven_TestProject(Local)"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="NUMBER_OF_PROCESSORS" value="2"/>
+    <property name="sun.management.compiler" value="HotSpot Client Compiler"/>
+    <property name="JENKINS_HOME" value="C:\Users\KarthIkshithaKrish\.jenkins"/>
+    <property name="HUDSON_SERVER_COOKIE" value="3e78afe40e22e270"/>
+    <property name="POM_ARTIFACTID" value="selenium"/>
+    <property name="os.name" value="Windows 7"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_231\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_231\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_231\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_231\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_231\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_231\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_231\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_231\jre\classes"/>
+    <property name="EXECUTOR_NUMBER" value="1"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="PATHEXT" value=".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="POM_DISPLAYNAME" value="Selenium Project"/>
+    <property name="NODE_LABELS" value="master"/>
+    <property name="TEMP" value="C:\Users\KARTHI~1\AppData\Local\Temp"/>
+    <property name="java.runtime.version" value="1.8.0_231-b11"/>
+    <property name="user.name" value="KarthIkshithaKrish"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="ProgramFiles" value="C:\Program Files"/>
+    <property name="PROMPT" value="$P$G"/>
+    <property name="user.language" value="en"/>
+    <property name="JOB_BASE_NAME" value="Maven_TestProject(Local)"/>
+    <property name="RUN_CHANGES_DISPLAY_URL" value="http://localhost:8080/job/Maven_TestProject(Local)/4/display/redirect?page=changes"/>
+    <property name="BUILD_DISPLAY_NAME" value="#4"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_231\jre\bin"/>
+    <property name="LOCALAPPDATA" value="C:\Users\KarthIkshithaKrish\AppData\Local"/>
+    <property name="java.version" value="1.8.0_231"/>
+    <property name="PROCESSOR_LEVEL" value="6"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="USERNAME" value="KarthIkshithaKrish"/>
+    <property name="sun.arch.data.model" value="32"/>
+    <property name="NODE_NAME" value="master"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_231\jre\lib\endorsed"/>
+    <property name="BUILD_ID" value="4"/>
+    <property name="sun.cpu.isalist" value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="HOMEDRIVE" value="C:"/>
+    <property name="maven.conf" value="C:\Program Files\apache-maven-3.6.3\conf"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="=::" value="::\"/>
+    <property name="org.slf4j.simpleLogger.defaultLogLevel" value="info"/>
+    <property name="user.country" value="US"/>
+    <property name="ALLUSERSPROFILE" value="C:\ProgramData"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_231\jre"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="os.version" value="6.1"/>
+    <property name="RUN_DISPLAY_URL" value="http://localhost:8080/job/Maven_TestProject(Local)/4/display/redirect"/>
+    <property name="POM_VERSION" value="0.0.1-SNAPSHOT"/>
+    <property name="TMP" value="C:\Users\KARTHI~1\AppData\Local\Temp"/>
+    <property name="path.separator" value=";"/>
+    <property name="java.vm.version" value="25.231-b11"/>
+    <property name="user.variant" value=""/>
+    <property name="JOB_DISPLAY_URL" value="http://localhost:8080/job/Maven_TestProject(Local)/display/redirect"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="FP_NO_HOST_CHECK" value="NO"/>
+    <property name="JAVA_HOME" value="C:\Program Files\Java\jdk1.8.0_231"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="CommonProgramFiles" value="C:\Program Files\Common Files"/>
+    <property name="ComSpec" value="C:\Windows\system32\cmd.exe"/>
+    <property name="HOMEPATH" value="\Users\KarthIkshithaKrish"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="POM_PACKAGING" value="jar"/>
+    <property name="COMPUTERNAME" value="BUSYBEE2020"/>
+    <property name="user.script" value=""/>
+    <property name="POM_GROUPID" value="MavenGitJenkins"/>
+    <property name="user.home" value="C:\Users\KarthIkshithaKrish"/>
+    <property name="PUBLIC" value="C:\Users\Public"/>
+    <property name="BUILD_TAG" value="jenkins-Maven_TestProject(Local)-4"/>
+    <property name="JENKINS_SERVER_COOKIE" value="3e78afe40e22e270"/>
+    <property name="HUDSON_URL" value="http://localhost:8080/"/>
+    <property name="ProgramData" value="C:\ProgramData"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="USERPROFILE" value="C:\Users\KarthIkshithaKrish"/>
+    <property name="CLASSPATH" value=""/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_231\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\apache-maven-3.6.3/bin;C:\Program Files\Java\jdk1.8.0_231/bin;C:\Program Files\Java\jdk1.8.0_231/bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;."/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="APPDATA" value="C:\Users\KarthIkshithaKrish\AppData\Roaming"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="maven.home" value="C:\Program Files\apache-maven-3.6.3"/>
+    <property name="java.class.path" value="C:\Users\KarthIkshithaKrish\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven35-agent-1.13.jar;C:\Program Files\apache-maven-3.6.3\boot\plexus-classworlds-2.6.0.jar;C:\Program Files\apache-maven-3.6.3/conf/logging"/>
+    <property name="sun.java.command" value="jenkins.maven3.agent.Maven35Main C:\Program Files\apache-maven-3.6.3 C:\Users\KarthIkshithaKrish\.jenkins\war\WEB-INF\lib\remoting-3.36.1.jar C:\Users\KarthIkshithaKrish\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven35-interceptor-1.13.jar C:\Users\KarthIkshithaKrish\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven3-interceptor-commons-1.13.jar 51280"/>
+    <property name="Path" value="C:\Program Files\Java\jdk1.8.0_231/bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="PROCESSOR_ARCHITECTURE" value="x86"/>
+    <property name="PATH+JDK" value="C:\Program Files\Java\jdk1.8.0_231/bin"/>
+    <property name="PROCESSOR_IDENTIFIER" value="x86 Family 6 Model 23 Stepping 10, GenuineIntel"/>
+    <property name="SESSIONNAME" value="Console"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.os.patch.level" value="Service Pack 1"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="M2_HOME" value="C:\Program Files\apache-maven-3.6.3"/>
+    <property name="java.io.tmpdir" value="C:\Users\KARTHI~1\AppData\Local\Temp\"/>
+    <property name="OS" value="Windows_NT"/>
+    <property name="HUDSON_HOME" value="C:\Users\KarthIkshithaKrish\.jenkins"/>
+    <property name="PATH+MAVEN" value="C:\Program Files\apache-maven-3.6.3/bin"/>
+    <property name="BUILD_URL" value="http://localhost:8080/job/Maven_TestProject(Local)/4/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="os.arch" value="x86"/>
+    <property name="SystemRoot" value="C:\Windows"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_231\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="user.dir" value="D:\My Assignments\Eclise_Oxygen\selenium"/>
+    <property name="JOB_URL" value="http://localhost:8080/job/Maven_TestProject(Local)/"/>
+    <property name="LOGONSERVER" value="\\BUSYBEE2020"/>
+    <property name="USERDOMAIN" value="BusyBee2020"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="MAVEN_HOME" value="C:\Program Files\apache-maven-3.6.3"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) Client VM"/>
+    <property name="BUILD_NUMBER" value="4"/>
+    <property name="JENKINS_URL" value="http://localhost:8080/"/>
+    <property name="PROCESSOR_REVISION" value="170a"/>
+    <property name="windir" value="C:\Windows"/>
+    <property name="=C:" value="C:\"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="SystemDrive" value="C:"/>
+    <property name="maven3.interceptor" value="C:\Users\KarthIkshithaKrish\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven35-interceptor-1.13.jar"/>
+    <property name="WORKSPACE" value="C:\Users\KarthIkshithaKrish\.jenkins\workspace\Maven_TestProject(Local)"/>
+    <property name="maven3.interceptor.common" value="C:\Users\KarthIkshithaKrish\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven3-interceptor-commons-1.13.jar"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="PSModulePath" value="C:\Windows\system32\WindowsPowerShell\v1.0\Modules\"/>
+  </properties>
+  <testcase name="testExecute" classname="pages.Registration_Test" time="1.576">
+    <failure message="org/apache/commons/exec/Executor" type="java.lang.NoClassDefFoundError"><![CDATA[java.lang.NoClassDefFoundError: org/apache/commons/exec/Executor
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:355)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	at org.openqa.selenium.os.CommandLine.<init>(CommandLine.java:38)
+	at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:79)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+	at util.LaunchBrowser_Test.launchURL(LaunchBrowser_Test.java:48)
+	at util.SeleniumActions_COPY.optionType(SeleniumActions_COPY.java:83)
+	at pages.Registration_Test.testExecute(Registration_Test.java:121)
+]]></failure>
+    <system-out><![CDATA[INFO  | 2020-01-31 01:12:21 | [main] pages.Registration_Test (Registration_Test.java:37) - ENTER into preConfig()
+INFO  | 2020-01-31 01:12:21 | [main] util.ReadProperties (ReadProperties.java:19) - Enter into readPropertiesFile()
+INFO  | 2020-01-31 01:12:21 | [main] util.ReadProperties (ReadProperties.java:22) - Exit from readPropertiesFile()
+INFO  | 2020-01-31 01:12:21 | [main] pages.Registration_Test (Registration_Test.java:42) - EXIT from preConfig()
+INFO  | 2020-01-31 01:12:21 | [main] pages.Registration_Test (Registration_Test.java:47) - ENTER into testExecution()
+Folder name is Report_Jan312020_011221707
+INFO  | 2020-01-31 01:12:21 | [main] util.FolderCreation (FolderCreation.java:37) - ENTER into createDirectory(String path, String folderName)
+INFO  | 2020-01-31 01:12:21 | [main] util.FolderCreation (FolderCreation.java:40) - Report path: D:\My Assignments\Selenium_UI_AUTOMATION\Reports\Report_Jan312020_011221707
+INFO  | 2020-01-31 01:12:21 | [main] util.FolderCreation (FolderCreation.java:45) - Directory created - D:\My Assignments\Selenium_UI_AUTOMATION\Reports\Report_Jan312020_011221707
+INFO  | 2020-01-31 01:12:21 | [main] util.FolderCreation (FolderCreation.java:51) - subDirectory created - D:\My Assignments\Selenium_UI_AUTOMATION\Reports\Report_Jan312020_011221707\screenshots
+INFO  | 2020-01-31 01:12:21 | [main] util.FolderCreation (FolderCreation.java:67) - EXIT from createDirectory(String path, String folderName)
+INFO  | 2020-01-31 01:12:21 | [main] util.HtmlCreator (HtmlCreator.java:96) - ENTER into createReportFile(String reportPath)
+INFO  | 2020-01-31 01:12:21 | [main] util.HtmlCreator (HtmlCreator.java:102) - ENTER into createFile(String reportPath) try
+INFO  | 2020-01-31 01:12:21 | [main] util.HtmlCreator (HtmlCreator.java:103) - File path is D:\My Assignments\Selenium_UI_AUTOMATION\Reports\Report_Jan312020_011221707\Report.html
+INFO  | 2020-01-31 01:12:21 | [main] util.HtmlCreator (HtmlCreator.java:112) - ENTER into createFile(String reportPath) try
+INFO  | 2020-01-31 01:12:21 | [main] util.HtmlCreator (HtmlCreator.java:120) - EXIT from createReportFile(String reportPath)
+INFO  | 2020-01-31 01:12:21 | [main] util.HtmlCreator (HtmlCreator.java:136) - ENTER into copyFileContent(BufferedWriter writer, String sourceFile)
+INFO  | 2020-01-31 01:12:21 | [main] util.HtmlCreator (HtmlCreator.java:156) - EXIT from copyFileContent(BufferedWriter writer, String sourceFile)
+INFO  | 2020-01-31 01:12:21 | [main] pages.Registration_Test (Registration_Test.java:63) - Header content copied to the primary report
+INFO  | 2020-01-31 01:12:21 | [main] pages.Registration_Test (Registration_Test.java:74) - BufferedWriter reference is java.io.BufferedWriter@150f9e
+INFO  | 2020-01-31 01:12:21 | [main] pages.Registration_Test (Registration_Test.java:78) - Report exist in : D:\My Assignments\Selenium_UI_AUTOMATION\Reports\Report_Jan312020_011221707\Report.html
+INFO  | 2020-01-31 01:12:21 | [main] util.HtmlCreator (HtmlCreator.java:173) - ENTER into copyFile(String sourceFile, String destinationFile)
+INFO  | 2020-01-31 01:12:21 | [main] util.HtmlCreator (HtmlCreator.java:191) - Exit from copyFile(String sourceFile, String destinationFile)
+INFO  | 2020-01-31 01:12:21 | [main] util.HtmlCreator (HtmlCreator.java:198) - ENTER into findReplaceString(String toFind, String toReplace, String filePath)
+INFO  | 2020-01-31 01:12:21 | [main] util.HtmlCreator (HtmlCreator.java:258) - Exit from findReplaceString(String toFind, String toReplace, String filePath)
+file path value is  D:\My Assignments\Selenium_UI_AUTOMATION\Reports\Report_Jan312020_011221707\Registration_Test.html
+INFO  | 2020-01-31 01:12:21 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:58) - Enter into main() try block
+INFO  | 2020-01-31 01:12:21 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:65) - file extension is xlsx and SheetName is Registration
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:76) - first row index: 17last row index: 0
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:78) - sheet reference value Name: /xl/worksheets/sheet1.xml - Content Type: application/vnd.openxmlformats-officedocument.spreadsheetml.worksheet+xmlsheetName is Registrationno. of rows(excluding header): 17
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:85) - cell value TS_Step 1
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:89) - Cloumn coutn for ROW 1 is 7
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:97) - TS_Step 1 type is String
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:97) - Choose Browser type is String
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:97) - Pass the index valure for respective Browser  type is String
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:97) - NA type is String
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:97) - BROWSER_SELECTION type is String
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:121) - 2 decimal contains only 0
+WARN  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:127) - Cell is empty / blank
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:134) - ROW_DATA size: 7 ROW_DATA contains --[TS_Step 1, Choose Browser, Pass the index valure for respective Browser , NA, BROWSER_SELECTION, 2, NA]
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:85) - cell value TS_Step 2
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:89) - Cloumn coutn for ROW 2 is 7
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:97) - TS_Step 2 type is String
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:97) - Launch URL type is String
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:97) - Pass the URL and browser should launch the URL type is String
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:97) - NA type is String
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:97) - LAUNCH_URL type is String
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:97) - http://demo.guru99.com/test/newtours/register.php type is String
+WARN  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:127) - Cell is empty / blank
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:134) - ROW_DATA size: 7 ROW_DATA contains --[TS_Step 2, Launch URL, Pass the URL and browser should launch the URL, NA, LAUNCH_URL, http://demo.guru99.com/test/newtours/register.php, NA]
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:85) - cell value TS_Step 3
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:89) - Cloumn coutn for ROW 3 is 7
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:97) - TS_Step 3 type is String
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:97) - Maximize WebBrowser type is String
+WARN  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:127) - Cell is empty / blank
+WARN  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:127) - Cell is empty / blank
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:97) - MAXIMIZE_BROWSER type is String
+WARN  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:127) - Cell is empty / blank
+WARN  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:127) - Cell is empty / blank
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:134) - ROW_DATA size: 7 ROW_DATA contains --[TS_Step 3, Maximize WebBrowser, NA, NA, MAXIMIZE_BROWSER, NA, NA]
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:85) - cell value TS_Step 4
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:89) - Cloumn coutn for ROW 4 is 7
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:97) - TS_Step 4 type is String
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:97) - Enter First Name type is String
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:97) - Inputs should be entered in the  First Name field type is String
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:97) - Registration.FirstName type is String
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:97) - INPUT type is String
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:97) - Ikshitha type is String
+WARN  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:127) - Cell is empty / blank
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:134) - ROW_DATA size: 7 ROW_DATA contains --[TS_Step 4, Enter First Name, Inputs should be entered in the  First Name field, Registration.FirstName, INPUT, Ikshitha, NA]
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:85) - cell value TS_Step 5
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:89) - Cloumn coutn for ROW 5 is 7
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:97) - TS_Step 5 type is String
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:97) - Enter Last Name type is String
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:97) - Inputs should be entered in the  Last Name field type is String
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:97) - Registration.LastName type is String
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:97) - INPUT type is String
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:97) - Karthiga Krish type is String
+WARN  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:127) - Cell is empty / blank
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:134) - ROW_DATA size: 7 ROW_DATA contains --[TS_Step 5, Enter Last Name, Inputs should be entered in the  Last Name field, Registration.LastName, INPUT, Karthiga Krish, NA]
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:85) - cell value TS_Step 6
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:89) - Cloumn coutn for ROW 6 is 7
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:97) - TS_Step 6 type is String
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:97) - Enter Phone Number type is String
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:97) - Inputs should be entered in the Phone number field type is String
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:97) - Registration.PhoneNo type is String
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:97) - INPUT type is String
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:106) - 4.4303033E7 type is converted to Float as 44303032
+WARN  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:127) - Cell is empty / blank
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:134) - ROW_DATA size: 7 ROW_DATA contains --[TS_Step 6, Enter Phone Number, Inputs should be entered in the Phone number field, Registration.PhoneNo, INPUT, 44303032, NA]
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:85) - cell value TS_Step 7
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:89) - Cloumn coutn for ROW 7 is 7
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:97) - TS_Step 7 type is String
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:97) - Enter Email type is String
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:97) - Inputs should be entered in the Email field type is String
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:97) - Registration.Email type is String
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:97) - INPUT type is String
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:97) - Test@testmail.com type is String
+WARN  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:127) - Cell is empty / blank
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:134) - ROW_DATA size: 7 ROW_DATA contains --[TS_Step 7, Enter Email, Inputs should be entered in the Email field, Registration.Email, INPUT, Test@testmail.com, NA]
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:85) - cell value TS_Step 8
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:89) - Cloumn coutn for ROW 8 is 7
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:97) - TS_Step 8 type is String
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:97) - Enter Address type is String
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:97) - Inputs should be entered in the address field type is String
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:97) - Registration.Address type is String
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:97) - INPUT type is String
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:97) - 1/2750 Nehru Nagar type is String
+WARN  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:127) - Cell is empty / blank
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:134) - ROW_DATA size: 7 ROW_DATA contains --[TS_Step 8, Enter Address, Inputs should be entered in the address field, Registration.Address, INPUT, 1/2750 Nehru Nagar, NA]
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:85) - cell value TS_Step 9
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:89) - Cloumn coutn for ROW 9 is 7
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:97) - TS_Step 9 type is String
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:97) - Enter City type is String
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:97) - Inputs should be entered in the City field type is String
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:97) - Registration.City type is String
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:97) - INPUT type is String
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:97) - Ramanathapuram type is String
+WARN  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:127) - Cell is empty / blank
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:134) - ROW_DATA size: 7 ROW_DATA contains --[TS_Step 9, Enter City, Inputs should be entered in the City field, Registration.City, INPUT, Ramanathapuram, NA]
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:85) - cell value TS_Step 10
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:89) - Cloumn coutn for ROW 10 is 7
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:97) - TS_Step 10 type is String
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:97) - Enter State type is String
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:97) - Inputs should be entered in the State field type is String
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:97) - Registration.State type is String
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:97) - INPUT type is String
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:97) - Tamil Nadu type is String
+WARN  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:127) - Cell is empty / blank
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:134) - ROW_DATA size: 7 ROW_DATA contains --[TS_Step 10, Enter State, Inputs should be entered in the State field, Registration.State, INPUT, Tamil Nadu, NA]
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:85) - cell value TS_Step 11
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:89) - Cloumn coutn for ROW 11 is 7
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:97) - TS_Step 11 type is String
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:97) - Enter Postal Code type is String
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:97) - Inputs should be entered in the Postal Code field type is String
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:97) - Registration.PostalCode type is String
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:97) - INPUT type is String
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:121) - 623503 decimal contains only 0
+WARN  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:127) - Cell is empty / blank
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:134) - ROW_DATA size: 7 ROW_DATA contains --[TS_Step 11, Enter Postal Code, Inputs should be entered in the Postal Code field, Registration.PostalCode, INPUT, 623503, NA]
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:85) - cell value TS_Step 12
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:89) - Cloumn coutn for ROW 12 is 7
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:97) - TS_Step 12 type is String
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:97) - Select the Country type is String
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:97) - Choose the country from the drop down type is String
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:97) - Registration.Country type is String
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:97) - SELECT type is String
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:121) - 2 decimal contains only 0
+WARN  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:127) - Cell is empty / blank
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:134) - ROW_DATA size: 7 ROW_DATA contains --[TS_Step 12, Select the Country, Choose the country from the drop down, Registration.Country, SELECT, 2, NA]
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:85) - cell value TS_Step 13
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:89) - Cloumn coutn for ROW 13 is 7
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:97) - TS_Step 13 type is String
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:97) - Enter UserName type is String
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:97) - Inputs should be entered in the UserName field type is String
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:97) - Registration.UserName type is String
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:97) - INPUT type is String
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:97) - BusyBee type is String
+WARN  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:127) - Cell is empty / blank
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:134) - ROW_DATA size: 7 ROW_DATA contains --[TS_Step 13, Enter UserName, Inputs should be entered in the UserName field, Registration.UserName, INPUT, BusyBee, NA]
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:85) - cell value TS_Step 14
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:89) - Cloumn coutn for ROW 14 is 7
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:97) - TS_Step 14 type is String
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:97) - Enter Password type is String
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:97) - Inputs should be entered in the Password field type is String
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:97) - Registration.Password type is String
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:97) - INPUT type is String
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:121) - 123 decimal contains only 0
+WARN  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:127) - Cell is empty / blank
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:134) - ROW_DATA size: 7 ROW_DATA contains --[TS_Step 14, Enter Password, Inputs should be entered in the Password field, Registration.Password, INPUT, 123, NA]
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:85) - cell value TS_Step 15
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:89) - Cloumn coutn for ROW 15 is 7
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:97) - TS_Step 15 type is String
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:97) - Enter Confirmation Password type is String
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:97) - Inputs should be entered in the Confirmation Password field type is String
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:97) - Registration.Confirmationpassword type is String
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:97) - INPUT type is String
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:121) - 123 decimal contains only 0
+WARN  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:127) - Cell is empty / blank
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:134) - ROW_DATA size: 7 ROW_DATA contains --[TS_Step 15, Enter Confirmation Password, Inputs should be entered in the Confirmation Password field, Registration.Confirmationpassword, INPUT, 123, NA]
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:85) - cell value TS_Step 16
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:89) - Cloumn coutn for ROW 16 is 7
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:97) - TS_Step 16 type is String
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:97) - Click Submit Button type is String
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:97) - After clicking submit button user need to navigate  type is String
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:97) - Registration.SubmitButton type is String
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:97) - CLICK type is String
+WARN  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:127) - Cell is empty / blank
+WARN  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:127) - Cell is empty / blank
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:134) - ROW_DATA size: 7 ROW_DATA contains --[TS_Step 16, Click Submit Button, After clicking submit button user need to navigate , Registration.SubmitButton, CLICK, NA, NA]
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:85) - cell value TS_Step 17
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:89) - Cloumn coutn for ROW 17 is 7
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:97) - TS_Step 17 type is String
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:97) - Close Browser  type is String
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:97) - Should Close the browser and webdriver type is String
+WARN  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:127) - Cell is empty / blank
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:97) - TERMINATE_DRIVER type is String
+WARN  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:127) - Cell is empty / blank
+WARN  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:127) - Cell is empty / blank
+INFO  | 2020-01-31 01:12:22 | [main] util.ExcelHandler_COPY (ExcelHandler_COPY.java:134) - ROW_DATA size: 7 ROW_DATA contains --[TS_Step 17, Close Browser , Should Close the browser and webdriver, NA, TERMINATE_DRIVER, NA, NA]
+INFO  | 2020-01-31 01:12:22 | [main] pages.Registration_Test (Registration_Test.java:102) - Array Length is 17
+INFO  | 2020-01-31 01:12:22 | [main] pages.Registration_Test (Registration_Test.java:118) - [TS_Step 1, Choose Browser, Pass the index valure for respective Browser , NA, BROWSER_SELECTION, 2, NA]
+INFO  | 2020-01-31 01:12:22 | [main] pages.Registration_Test (Registration_Test.java:120) - this row has 7columns and the data contains: TS_Step 1
+INFO  | 2020-01-31 01:12:22 | [main] util.SeleniumActions_COPY (SeleniumActions_COPY.java:61) - Enter into to SeleniumAction - optionType(WebDriver, List<String>)
+INFO  | 2020-01-31 01:12:22 | [main] util.SeleniumActions_COPY (SeleniumActions_COPY.java:65) - Data Contains : [TS_Step 1, Choose Browser, Pass the index valure for respective Browser , NA, BROWSER_SELECTION, 2, NA]
+INFO  | 2020-01-31 01:12:22 | [main] util.SeleniumActions_COPY (SeleniumActions_COPY.java:449) - ENTER into objectRepoSearch(String objectRepoParam) try block
+INFO  | 2020-01-31 01:12:22 | [main] util.ObjectRepoReader (ObjectRepoReader.java:16) - ENTER into objectRepo_Search(String searchObject) try block
+INFO  | 2020-01-31 01:12:22 | [main] util.ReadProperties (ReadProperties.java:19) - Enter into readPropertiesFile()
+INFO  | 2020-01-31 01:12:22 | [main] util.ReadProperties (ReadProperties.java:22) - Exit from readPropertiesFile()
+INFO  | 2020-01-31 01:12:22 | [main] util.ObjectRepoReader (ObjectRepoReader.java:19) - EXIT from objectRepo_Search(String searchObject) try block
+WARN  | 2020-01-31 01:12:22 | [main] util.SeleniumActions_COPY (SeleniumActions_COPY.java:452) - object NA not exist in objectRepository.properties file
+INFO  | 2020-01-31 01:12:22 | [main] util.SeleniumActions_COPY (SeleniumActions_COPY.java:466) - Object Repo Contains: null
+INFO  | 2020-01-31 01:12:22 | [main] util.SeleniumActions_COPY (SeleniumActions_COPY.java:467) - EXIT from objectRepoSearch(String objectRepoParam) try block
+INFO  | 2020-01-31 01:12:22 | [main] util.SeleniumActions_COPY (SeleniumActions_COPY.java:73) - Enter into switch for action BROWSER_SELECTION
+INFO  | 2020-01-31 01:12:22 | [main] util.SeleniumActions_COPY (SeleniumActions_COPY.java:163) - Exit from SeleniumAction - optionType(WebDriver, List<String>)
+INFO  | 2020-01-31 01:12:22 | [main] pages.Registration_Test (Registration_Test.java:118) - [TS_Step 2, Launch URL, Pass the URL and browser should launch the URL, NA, LAUNCH_URL, http://demo.guru99.com/test/newtours/register.php, NA]
+INFO  | 2020-01-31 01:12:22 | [main] pages.Registration_Test (Registration_Test.java:120) - this row has 7columns and the data contains: TS_Step 2
+INFO  | 2020-01-31 01:12:22 | [main] util.SeleniumActions_COPY (SeleniumActions_COPY.java:61) - Enter into to SeleniumAction - optionType(WebDriver, List<String>)
+INFO  | 2020-01-31 01:12:22 | [main] util.SeleniumActions_COPY (SeleniumActions_COPY.java:65) - Data Contains : [TS_Step 2, Launch URL, Pass the URL and browser should launch the URL, NA, LAUNCH_URL, http://demo.guru99.com/test/newtours/register.php, NA]
+INFO  | 2020-01-31 01:12:22 | [main] util.SeleniumActions_COPY (SeleniumActions_COPY.java:449) - ENTER into objectRepoSearch(String objectRepoParam) try block
+INFO  | 2020-01-31 01:12:22 | [main] util.ObjectRepoReader (ObjectRepoReader.java:16) - ENTER into objectRepo_Search(String searchObject) try block
+INFO  | 2020-01-31 01:12:22 | [main] util.ReadProperties (ReadProperties.java:19) - Enter into readPropertiesFile()
+INFO  | 2020-01-31 01:12:22 | [main] util.ReadProperties (ReadProperties.java:22) - Exit from readPropertiesFile()
+INFO  | 2020-01-31 01:12:22 | [main] util.ObjectRepoReader (ObjectRepoReader.java:19) - EXIT from objectRepo_Search(String searchObject) try block
+WARN  | 2020-01-31 01:12:22 | [main] util.SeleniumActions_COPY (SeleniumActions_COPY.java:452) - object NA not exist in objectRepository.properties file
+INFO  | 2020-01-31 01:12:22 | [main] util.SeleniumActions_COPY (SeleniumActions_COPY.java:466) - Object Repo Contains: null
+INFO  | 2020-01-31 01:12:22 | [main] util.SeleniumActions_COPY (SeleniumActions_COPY.java:467) - EXIT from objectRepoSearch(String objectRepoParam) try block
+INFO  | 2020-01-31 01:12:22 | [main] util.SeleniumActions_COPY (SeleniumActions_COPY.java:81) - Enter into switch for action LAUNCH_URL
+INFO  | 2020-01-31 01:12:22 | [main] util.LaunchBrowser_Test (LaunchBrowser_Test.java:34) - Enter into launchURL(int browserIndex, String url) try block
+INFO  | 2020-01-31 01:12:22 | [main] util.ReadProperties (ReadProperties.java:19) - Enter into readPropertiesFile()
+INFO  | 2020-01-31 01:12:22 | [main] util.ReadProperties (ReadProperties.java:22) - Exit from readPropertiesFile()
+INFO  | 2020-01-31 01:12:22 | [main] util.LaunchBrowser_Test (LaunchBrowser_Test.java:46) - Launch chrome Browser
+]]></system-out>
+  </testcase>
+</testsuite>
