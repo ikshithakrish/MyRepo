@@ -1,0 +1,374 @@
+Launch Browser & URL:
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
+WebDriver DRIVER = null;
+String URL = "https://www.google.com";
+System.setProperty("webdriver.chrome.driver", "D:\\My Assignments\\Selenium_UI_AUTOMATION\\Download\\Chrome\\79.0.3945.36\\chromedriver.exe"));
+			DRIVER = new ChromeDriver();			
+			DRIVER.get(URL);			
+System.setProperty("webdriver.ie.driver", "D:\\My Assignments\\Selenium_UI_AUTOMATION\\Download\\IE\\IEDriverServer_Win32_3.150.1\\IEDriverServer.exe");
+			DRIVER = new InternetExplorerDriver();
+			DRIVER.get(URL);			
+			DRIVER.close();  // It closes only the browser window that WebDriver is currently controlling.
+			DRIVER.quite();  // It closes all windows that WebDriver has opened
+-------------------------------------------------------------------------------------------
+Selenium Actions:
+DRIVER.manage().window().maximize();
+//<a href="register.php" style="color: #0000ee;text-decoration: underline;">REGISTER</a>
+DRIVER.findElement(By.cssSelector("a[href='register.php']")).click();
+//<input maxlength="60" name="firstName" size="20">
+DRIVER.findElement(By.cssSelector("input[name='firstName']")).sendKeys("Gokula");
+//<input maxlength="60" name="lastName" size="20">
+DRIVER.findElement(By.name("lastName")).sendKeys("Krishnan");
+//<input maxlength="20" name="phone" size="15">
+DRIVER.findElement(By.xpath("/html/body/div[2]/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr[5]/td/form/table/tbody/tr[4]/td[2]/input")).sendKeys("9999000010");
+//<input name="userName" id="userName" size="35" maxlength="64">
+DRIVER.findElement(By.id("userName")).sendKeys("GK@gmail.com");
+//<input maxlength="60" name="address1" size="40">
+DRIVER.findElement(By.name("address1")).sendKeys("Nehru Nagar");
+//<input maxlength="60" name="city" size="15">
+DRIVER.findElement(By.name("city")).sendKeys("Ramanathapuram");
+//				//<input maxlength="40" name="state">
+DRIVER.findElement(By.name("state")).sendKeys("Tamil Nadu");
+//<input maxlength="20" name="postalCode" size="15">
+DRIVER.findElement(By.name("postalCode")).sendKeys("623503");
+/*<select name="country" size="1">
+ * <option value="ALBANIA">ALBANIA</option>
+ * <option value="ALGERIA">ALGERIA</option>
+ * .
+ * .
+ * </select>
+ */
+Select country = new Select(DRIVER.findElement(By.name("country")));
+country.selectByIndex(5);
+//				country.selectByValue("ALGERIA"); // <option value="ALGERIA******">ALGERIA</option>
+//				country.selectByVisibleText("BOUVET ISLAND"); // <option value="BOUVET ISLAND">BOUVET ISLAND********</option>
+//<input name="email" id="email" size="20" maxlength="60">
+DRIVER.findElement(By.cssSelector("input[name='email'][id='email']")).sendKeys("GK@gmail.com");
+//<input maxlength="60" name="password" size="20" type="password">
+DRIVER.findElement(By.cssSelector("input[name='password'][type='password']")).sendKeys("123");
+//<input maxlength="60" name="confirmPassword" size="20" type="password">
+DRIVER.findElement(By.cssSelector("input[name='confirmPassword'][type='password']")).sendKeys("123");
+DRIVER.findElement(By.cssSelector("input[name='submit'][type='submit']")).click();
+//<a href="reservation.php" style="margin-left: 5px;color: #0000ee;text-decoration: underline;">Flights</a>
+DRIVER.findElement(By.linkText("Flights")).click();
+//<input type="radio" name="tripType" value="oneway">
+if(DRIVER.findElement(By.cssSelector("input[type='radio'][name='tripType'][value='roundtrip']")).isSelected()){
+DRIVER.findElement(By.cssSelector("input[type='radio'][name='tripType'][value='oneway']")).click();
+}
+/*				<select name="passCount">
+*               <option value="1">1 </option>
+*                <option value="2">2 </option>
+*                ..
+*               </select> */
+Select passengerCount = new Select(DRIVER.findElement(By.name("passCount")));
+passengerCount.selectByIndex(3);
+Select startingPoint = new Select(DRIVER.findElement(By.name("fromPort")));
+startingPoint.selectByValue("New York");
+//				<select name="fromMonth">
+//				<option value="1">January
+//				</option><option value="2">February	</option>..............</select>
+Select fromMonth = new Select(DRIVER.findElement(By.name("fromMonth")));
+fromMonth.selectByValue("11");
+Select toPort = new Select(DRIVER.findElement(By.name("toPort")));
+toPort.selectByValue("London");
+Select airline = new Select(DRIVER.findElement(By.name("airline")));
+airline.selectByVisibleText("Blue Skies Airlines");
+
+WebElement fruitsElement = DRIVER.findElement(By.id("fruits"));
+Select fruits = new Select(fruitsElement);
+fruits.selectByIndex(1);
+fruits.selectByValue("orange");
+fruits.selectByVisibleText("Grape");
+fruits.deselectByIndex(2);
+fruits.deselectAll();
+//Link & Partial Text
+int linkCount = DRIVER.findElements(By.linkText("Register")).size();
+int partialLinkCount = DRIVER.findElements(By.partialLinkText("Register")).size();
+LOGGER.info("Link text present for Register is " + linkCount + " partialLink text present for Register is " + partialLinkCount);
+LOGGER.info("Link text value found is " + DRIVER.findElements(By.linkText("Register")).toString());
+LOGGER.info("partilLink text value found is " + DRIVER.findElements(By.partialLinkText("Register")).toString());
+/* INFO    2019-09-20 07:12:27,207 [main] com.learning.main.Links_PartialLinks_8  - Link text present for Register is 1 partialLink text present for Register is 4
+INFO    2019-09-20 07:12:27,363 [main] com.learning.main.Links_PartialLinks_8  - Link text value found is [[[ChromeDriver: chrome on XP (879527d5eb8debe2ea9b2c5063d7ea80)] -> link text: Register]]
+INFO    2019-09-20 07:12:27,425 [main] com.learning.main.Links_PartialLinks_8  - partilLink text value found is [[[ChromeDriver: chrome on XP (879527d5eb8debe2ea9b2c5063d7ea80)] -> partial link text: Register], [[ChromeDriver: chrome on XP (879527d5eb8debe2ea9b2c5063d7ea80)] -> partial link text: Register], [[ChromeDriver: chrome on XP (879527d5eb8debe2ea9b2c5063d7ea80)] -> partial link text: Register], [[ChromeDriver: chrome on XP (879527d5eb8debe2ea9b2c5063d7ea80)] -> partial link text: Register]]*/
+//WebElement link = DRIVER.findElement(By.linkText("Register"));
+/*	<body>
+<a href="#">Register</a> 
+<a href="#">REGISTER</a>
+<a href="#">Registeror</a>
+<a href="#">Register User</a>
+<a href="#">Register Authneticaion</a>
+</body> */
+
+
+DRIVER.findElement(By.cssSelector("input[name='servClass'][type='radio']"));
+DRIVER.findElement(By.cssSelector("input[type='image'][name='findFlights']")).click();
+WebElement userName = DRIVER.findElement(By.name("userName"));			
+userName.sendKeys("test1");
+userName.clear();  // clear the value
+WebElement loginSubmit =  DRIVER.findElement(By.cssSelector("input[name=submit][value=Login]"));
+//loginSubmit.click();
+loginSubmit.submit();   // both are working submit & click even its not a submitButton ?????
+// Radio Button
+WebElement radioButton_option2 = DRIVER.findElement(By.id("vfb-7-2"));
+radioButton_option2.click();  // option2 
+DRIVER.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+int radioButtonOption = 0;
+WebElement radioButton = DRIVER.findElements(By.cssSelector("input[type=radio]")).get(radioButtonOption);
+radioButton.click();	 // option 1	
+logger.info("Elemetn 1 isDisplayed() ? " + DRIVER.findElements(By.cssSelector("input[type=radio]")).get(0).isDisplayed()); //true
+logger.info("Elemetn 1 isEnabled() ? " + DRIVER.findElements(By.cssSelector("input[type=radio]")).get(0).isEnabled()); //true ??????
+logger.info("Elemetn 1 isSelected() ? " + DRIVER.findElements(By.cssSelector("input[type=radio]")).get(0).isSelected()); //true
+logger.info("Elemetn 2  isDisplayed() ?  " + DRIVER.findElements(By.cssSelector("input[type=radio]")).get(1).isDisplayed()); //true
+logger.info("Elemetn 2  isEnabled() ?  " + DRIVER.findElements(By.cssSelector("input[type=radio]")).get(1).isEnabled()); //true  ?????
+logger.info("Elemetn 2  isSelected() ? " + DRIVER.findElements(By.cssSelector("input[type=radio]")).get(1).isSelected()); //false
+logger.info("Elemetn 3  isDisplayed() ? " + DRIVER.findElements(By.cssSelector("input[type=radio]")).get(2).isDisplayed()); // true
+logger.info("Elemetn 3 isEnabled() ? "  + DRIVER.findElements(By.cssSelector("input[type=radio]")).get(2).isEnabled()); // true ??????
+logger.info("Elemetn 3  isSelected() ? "  + DRIVER.findElements(By.cssSelector("input[type=radio]")).get(2).isSelected()); // false
+DRIVER.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+//checkbox
+WebElement checkBoxElement = null;
+int checkBox_Count = DRIVER.findElements(By.cssSelector("input[type=checkbox]")).size();
+for(int i = 0; i< checkBox_Count; i++){
+	checkBoxElement = DRIVER.findElements(By.cssSelector("input[type=checkbox]")).get(i);
+	logger.info("checkbox " + (i+1) + "is selected ? " +checkBoxElement.isSelected());
+	checkBoxElement.click();
+	logger.info("checkbox clicked");
+	logger.info("checkbox " + (i+1) + "is enabled ? " +checkBoxElement.isEnabled());
+}
+//image
+WebElement imageElement = DRIVER.findElement(By.xpath("/html/body/div[2]/table/tbody/tr/td[2]/table/tbody/tr[1]/td/img"));
+logger.info("image isDisplayed() ? " + imageElement.isDisplayed()); //true
+logger.info("image isEnabled() ? " + imageElement.isEnabled()); // true
+
+-----------------------------------------------------------
+findElement(WebElement - throws NoSuchElementException if no element exist) vs findElements (List<WebElement> won't through if elements not found will get empty list)
+DRIVER.findElement(By.cssSelector("a")).getText(); //****  (first anchor tag not having text)
+List<WebElement> anchorElements = DRIVER.findElements(By.cssSelector("a")); // find all the anchor tags in the page
+logger.info("Number of elements:" +anchorElements.size());  // Number of elements: ?
+for (int i=0; i<anchorElements.size();i++){
+logger.info(anchorElements.get(i).getText() + " link href is " + anchorElements.get(i).getAttribute("href") + "and style is " + anchorElements.get(i).getAttribute("style"));  // Demo Site link href is http://demo.guru99.com/test/newtours/#and style is font-size: 32px;
+}
+--------------------------------------------------------------------------------
+Mouse and keyboard events:
+//Click submenus
+Actions subMenuActions = new Actions(DRIVER);
+WebElement mainMenu = DRIVER.findElement(By.xpath("/html/body/div[1]/header/div[2]/div/div/nav/nav/ul/li[7]/a"));
+Action subMenuSelection = subMenuActions.moveToElement(mainMenu).build(); 
+subMenuSelection.perform();
+WebElement subMenu1 = DRIVER.findElement(By.xpath("/html/body/div[1]/header/div[2]/div/div/nav/nav/ul/li[7]/ul/li[1]/a"));
+subMenuSelection = subMenuActions.moveToElement(subMenu1).build(); 
+subMenuSelection.perform();
+WebElement subMenu2 = DRIVER.findElement(By.xpath("//*[@id='menu-item-531']"));
+//subMenu2.click();
+// or
+subMenuSelection = subMenuActions.moveToElement(subMenu2).click().build(); 
+subMenuSelection.perform();
+
+//Double click the button to launch an alertbox
+Actions action = new Actions(driver);
+WebElement link =driver.findElement(By.xpath("//button[text()='Double-Click Me To See Alert']"));
+action.doubleClick(link).perform();
+// Right click the button to launch right click menu options
+WebElement link1 = driver.findElement(By.cssSelector(".context-menu-one"));
+action.contextClick(link1).perform();
+----------------------------------------------------------------------------------------------
+Robot Class:
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.event.InputEvent;
+public void robot_WindowsAction() throws AWTException, InterruptedException{  
+Robot robotAction = new Robot();  // include try catch(AWTException / throws AWTException
+robotAction.keyPress(KeyEvent.VK_WINDOWS);
+Thread.sleep(2000); 
+robotAction.keyPress(KeyEvent.VK_E);
+Thread.sleep(2000); 	  
+robotAction.keyRelease(KeyEvent.VK_WINDOWS);
+robotAction.keyRelease(KeyEvent.VK_E);
+robotAction.keyPress(KeyEvent.VK_CONTROL);
+Thread.sleep(2000); 
+robotAction.keyPress(KeyEvent.VK_SPACE);
+Thread.sleep(2000);
+robotAction.keyRelease(KeyEvent.VK_CONTROL);
+Thread.sleep(2000); 
+robotAction.keyRelease(KeyEvent.VK_SPACE);
+Thread.sleep(2000);
+robotAction.keyPress(KeyEvent.VK_RIGHT);
+Thread.sleep(2000);
+robotAction.keyRelease(KeyEvent.VK_RIGHT);
+Thread.sleep(2000);
+robotAction.keyPress(KeyEvent.VK_ENTER);
+Thread.sleep(2000);
+robotAction.keyRelease(KeyEvent.VK_ENTER);
+Thread.sleep(2000);
+robotAction.mouseMove(630, 420);  // x and y axis
+robotAction.mousePress(InputEvent.BUTTON1_DOWN_MASK); // press left click
+robotAction.delay(1500);  // sleep / wait for 1.5 seconds
+robotAction.mouseRelease(InputEvent.BUTTON1_DOWN_MASK); // press left click
+Thread.sleep(2000);
+robotAction.mouseMove(630, 420);
+robotAction.mousePress(InputEvent.BUTTON1_DOWN_MASK); // press left click
+robotAction.delay(1500);  // sleep / wait for 1.5 seconds
+robotAction.mouseRelease(InputEvent.BUTTON1_DOWN_MASK); // press left click
+Thread.sleep(2000);
+robotAction.mousePress(InputEvent.BUTTON3_DOWN_MASK); // press Right click
+robotAction.delay(1500);  // sleep / wait for 1.5 seconds
+robotAction.mouseRelease(InputEvent.BUTTON3_DOWN_MASK); // press Right click
+robotAction.delay(2000);
+robotAction.keyPress(KeyEvent.VK_DOWN);
+robotAction.delay(2000);
+robotAction.keyRelease(KeyEvent.VK_DOWN);
+robotAction.keyPress(KeyEvent.VK_ENTER);
+robotAction.delay(2000);
+robotAction.keyRelease(KeyEvent.VK_ENTER);
+}
+--------------------------------------------------------------------------------
+Drag & Drop:
+import org.openqa.selenium.JavascriptExecutor;
+
+System.setProperty("webdriver.chrome.driver", "D:\\My Assignments\\Selenium_UI_AUTOMATION\\Download\\Chrome\\79.0.3945.36\\chromedriver.exe");
+WebDriver driver = new ChromeDriver();
+driver.get("http://demo.guru99.com/test/drag_drop.html");
+driver.manage().window().maximize();
+// ------ Scroll - BEGIN ----------------------
+JavascriptExecutor js = (JavascriptExecutor) driver;
+// This  will scroll down the page by  1000 pixel vertical		
+js.executeScript("window.scrollBy(0,1000)");  // window.scrollBy(x-pixels,y-pixels)	      	        
+// ------ Scroll - END ----------------------
+//Element(BANK) which need to drag.		
+WebElement From1=driver.findElement(By.xpath("//*[@id='credit2']/a"));	
+//Element(DEBIT SIDE) on which need to drop.		
+WebElement To1=driver.findElement(By.xpath("//*[@id='bank']/li"));					
+//Element(SALES) which need to drag.		
+WebElement From2=driver.findElement(By.xpath("//*[@id='credit1']/a"));
+//Element(CREDIT SIDE) on which need to drop.  		
+WebElement To2=driver.findElement(By.xpath("//*[@id='loan']/li"));		
+//Element(500) which need to drag.		
+WebElement From3=driver.findElement(By.xpath("//*[@id='fourth']/a"));	
+//Element(DEBIT SIDE) on which need to drop.		
+WebElement To3=driver.findElement(By.xpath("//*[@id='amt7']/li"));		
+//Element(500) which need to drag.		
+WebElement From4=driver.findElement(By.xpath("//*[@id='fourth']/a"));	
+//Element(CREDIT SIDE) on which need to drop.		
+WebElement To4=driver.findElement(By.xpath("//*[@id='amt8']/li"));		
+//Using Action class for drag and drop.		
+Actions act=new Actions(driver);					
+//BANK drag and drop.
+act.dragAndDrop(From1, To1).build().perform();
+//act.dragAndDropBy(From1, 135, 40).build().perform();  // (source, xOffset, yOffset)  135, 40 browser 
+//act.dragAndDropBy(From1, 120, 40).build().perform();  // (source, xOffset, yOffset)   120, 40 if browser maximized
+//Note:  The pixels values (xOffset, yOffset) change with screen resolution and browser size. This method is hence not reliable and not widely used.
+Thread.sleep(3000);  // 3 seconds need to add try and catch block
+//SALES drag and drop.		
+act.dragAndDrop(From2, To2).build().perform();
+Thread.sleep(3000);  // 3 seconds need to add try and catch block
+//500 drag and drop debit side.		
+act.dragAndDrop(From3, To3).build().perform();	
+Thread.sleep(3000);  // 3 seconds need to add try and catch block
+//500 drag and drop credit side. 		
+act.dragAndDrop(From4, To4).build().perform();		
+Thread.sleep(3000);  // 3 seconds need to add try and catch block
+//Verifying the Perfect! message.	
+if(driver.findElement(By.xpath("//a[contains(text(),'Perfect')]")).isDisplayed())							
+{
+System.out.println("Perfect Displayed !!!");					
+}
+else
+{
+System.out.println("Perfect not Displayed !!!");					
+}
+driver.quit();
+-----------------------------------------------------------------------------------------------------------------------
+FileUpload & Download:
+
+DOWNLOAD: (browser customize )
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+System.setProperty(propertiesFile.getProperty(Constants.CHROME_WEBDRIVER), propertiesFile.getProperty(Constants.CHROME_DRIVER_PATH));
+//DRIVER = new ChromeDriver();
+HashMap<String, Object> chromePrefs = new HashMap<String, Object>();
+//Disable download prompt in chrome browser - BEGIN
+chromePrefs.put("profile.default_content_settings.popups", 0);
+//chromePrefs.put("download.default_directory", System.getProperty("user.dir"));
+chromePrefs.put("download.default_directory", "C:\\Users\\BusyBee\\Downloads\\Mp3 Collections\\Pending\\Test");		 
+ChromeOptions options = new ChromeOptions();
+options.setExperimentalOption("prefs", chromePrefs);
+//Disable download prompt in chrome browser - END
+DRIVER = new ChromeDriver(options);
+DRIVER.get(URL);
+//DRIVER.navigate().to("https://www.thinkbroadband.com/download");
+DRIVER.findElement(By.xpath("/html/body/div/p[7]/a[1]")).click();
+// Check the file in the downloaded folder
+//File folder = new File(System.getProperty("user.dir"));
+File folder = new File(System.getProperty("C:\\Users\\BusyBee\\Downloads\\Mp3 Collections\\Pending\\Test"));
+		//List the files on that folder
+File[] listOfFiles = folder.listFiles();
+boolean found = false;
+File f = null;
+ //Look for the file in the files
+ // You should write smart REGEX according to the filename
+ for (File listOfFile : listOfFiles) {
+	 if (listOfFile.isFile()) {
+		  String fileName = listOfFile.getName();
+		   System.out.println("File " + listOfFile.getName());
+		   if (fileName.matches("5MB.zip")) {
+			   f = new File(fileName);
+			   found = true;
+			}
+		}
+	}
+-------
+String fileDownloadPath = "D:\\My Assignments\\Selenium_UI_AUTOMATION\\Upload & Download\\Download Files";
+String defaultPath = "C:\\Users\\KarthIkshithaKrish\\Downloads";
+
+Map<String, Object> prefsMap = new HashMap<String, Object>();
+prefsMap.put("profile.default_content_settings.popups", 0);  // Disable popups
+prefsMap.put("download.default_directory", fileDownloadPath);
+
+ChromeOptions option = new ChromeOptions();
+option.setExperimentalOption("prefs", prefsMap);
+option.addArguments("--test-type");
+option.addArguments("--disable-extensions");
+System.setProperty("webdriver.chrome.driver", "D:\\My Assignments\\Selenium_UI_AUTOMATION\\Download\\Chrome\\79.0.3945.36\\chromedriver.exe");
+WebDriver driver = new ChromeDriver(option);
+driver.get("https://www.seleniumhq.org/download/");
+driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+driver.manage().window().maximize();
+Thread.sleep(2000);
+driver.findElement(By.linkText("64 bit Windows IE")).click();
+System.out.println("Downloaded");
+DOWNLOAD FILE (Robot class)
+String fileDownloadPath = "C:\\Users\\Avinash\\SeleniumDownload";
+Map<String, Object> prefsMap = new HashMap<String, Object>();
+prefsMap.put("profile.default_content_settings.popups", 0);
+prefsMap.put("download.default_directory", fileDownloadPath);
+ChromeOptions option = new ChromeOptions();
+option.setExperimentalOption("prefs", prefsMap);
+option.addArguments("--test-type");
+option.addArguments("--disable-extensions");
+WebDriver driver  = new ChromeDriver(option);
+driver.get("https://www.seleniumhq.org/download/");
+driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+driver.manage().window().maximize();
+Thread.sleep(2000);
+driver.findElement(By.linkText("64 bit Windows IE")).click();
+Robot robotAction = new Robot();
+robotAction.delay(2000);
+StringSelection selection = new StringSelection("D:\\My Assignments\\Selenium_UI_AUTOMATION\\Upload & Download\\Download Files\\IE_Driver.zip");
+Toolkit.getDefaultToolkit().getSystemClipboard().setContents(selection,null);
+robotAction.setAutoDelay(1000);
+robotAction.keyPress(KeyEvent.VK_CONTROL);
+robotAction.keyPress(KeyEvent.VK_V);
+robotAction.keyRelease(KeyEvent.VK_CONTROL);
+robotAction.keyRelease(KeyEvent.VK_V);
+robotAction.setAutoDelay(1000);
+robotAction.keyPress(KeyEvent.VK_ENTER);
+robotAction.keyRelease(KeyEvent.VK_ENTER);
+UPLOAD FILE: (using sendKeys)
+driver.get("http://demo.automationtesting.in/Register.html");
+driver.manage().window().maximize();
+driver.findElement(By.id("imagesrc")).sendKeys("D:\\My Assignments\\Selenium_UI_AUTOMATION\\Upload & Download\\test.txt");
+-----------------------------------------------------------------------------------------------------------------------
+Alert & Popup:
