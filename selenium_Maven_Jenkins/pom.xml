@@ -216,34 +216,7 @@
 	<!-- Capture Screen Shots - BEGINs -->
 	
 
-	<!-- BDD Cucumber Dependency - BEGIN -->
-		<dependency>
-				<groupId>info.cukes</groupId>
-				<artifactId>cucumber-testng</artifactId>
-				<version>1.2.5</version>
-		</dependency>
-		<dependency>
-				<groupId>info.cukes</groupId>
-				<artifactId>cucumber-java</artifactId>
-				<version>1.2.5</version>
-		</dependency>
-		<dependency>
-				<groupId>info.cukes</groupId>
-				<artifactId>cucumber-jvm-deps</artifactId>
-				<version>1.0.5</version>
-				<scope>provided</scope>
-		</dependency>
-		<dependency>
-		    <groupId>io.cucumber</groupId>
-		    <artifactId>gherkin</artifactId>
-		    <version>3.2.0</version>
-		</dependency>
-		<dependency>
-		    <groupId>net.bytebuddy</groupId>
-		    <artifactId>byte-buddy</artifactId>
-		    <version>1.10.1</version>
-		</dependency>
-	<!-- BDD Cucumber Dependency - END -->
+	
 
 
    
