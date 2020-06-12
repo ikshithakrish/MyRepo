@@ -2,16 +2,31 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="15487" started-at="2020-02-04T19:17:14Z" finished-at="2020-02-04T19:17:29Z">
+  <suite name="Default suite" duration-ms="159511" started-at="2020-06-01T18:27:27Z" finished-at="2020-06-01T18:30:07Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="15487" started-at="2020-02-04T19:17:14Z" finished-at="2020-02-04T19:17:29Z">
-      <class name="pages.wait_Time">
-        <test-method status="PASS" signature="selenium_Wait()[pri:0, instance:pages.wait_Time@4edc67]" name="selenium_Wait" duration-ms="15444" started-at="2020-02-04T19:17:14Z" finished-at="2020-02-04T19:17:29Z">
+    <test name="Default test" duration-ms="159511" started-at="2020-06-01T18:27:27Z" finished-at="2020-06-01T18:30:07Z">
+      <class name="bdd_cucumber.CucumberTest">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:bdd_cucumber.CucumberTest@17cd7a0]" name="beforeClass" is-config="true" duration-ms="592" started-at="2020-06-01T18:27:27Z" finished-at="2020-06-01T18:27:28Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- selenium_Wait -->
-      </class> <!-- pages.wait_Time -->
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="test(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:bdd_cucumber.CucumberTest@17cd7a0]" name="test" duration-ms="158575" started-at="2020-06-01T18:27:28Z" data-provider="dp" finished-at="2020-06-01T18:30:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Ticket Registration]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:bdd_cucumber.CucumberTest@17cd7a0]" name="afterClass" is-config="true" duration-ms="31" started-at="2020-06-01T18:30:07Z" finished-at="2020-06-01T18:30:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- bdd_cucumber.CucumberTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

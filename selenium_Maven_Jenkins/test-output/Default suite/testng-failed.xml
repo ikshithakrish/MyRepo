@@ -3,11 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="pages.wait_Time">
+      <class name="bdd_cucumber.CucumberTest">
         <methods>
-          <include name="selenium_Wait"/>
+          <include name="test" invocation-numbers="0"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
         </methods>
-      </class> <!-- pages.wait_Time -->
+      </class> <!-- bdd_cucumber.CucumberTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
