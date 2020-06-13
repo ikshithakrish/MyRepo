@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test thread-count="5" name="Test(failed)">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="classes">
+  <test thread-count="2" name="Test(failed)" parallel="classes">
     <classes>
-      <class name="pages.Registration_Test">
+      <class name="bdd_cucumber.CucumberTest">
         <methods>
-          <include name="testExecute"/>
-          <include name="preConfig"/>
+          <include name="test" invocation-numbers="0"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
         </methods>
-      </class> <!-- pages.Registration_Test -->
+      </class> <!-- bdd_cucumber.CucumberTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
