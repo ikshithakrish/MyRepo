@@ -35,4 +35,6 @@ public class Constants {
 	public static final String REGISTRATION_TESTDATA = "REGISTRATION_TESTDATA";
 	public static final String REGISTRATION_SHEET_NAME = "REGISTRATION_SHEET_NAME";
 	
+	public static final String REGISTRATION_SHEET_NAME1 = "REGISTRATION_SHEET_NAME";
+	
 }
